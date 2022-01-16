@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React from 'react';
 
 import './styles.css';
 
@@ -7,12 +7,12 @@ import { loadPosts } from '../../utils/load-posts';
 import { Button } from '../../components/Button';
 import { TextInput } from '../../components/TextInput';
 
-export class Home extends Component {
+export class Home extends React.Component {
   state = {
     posts: [],
     allPosts: [],
     page: 0,
-    postsPerPage: 2,
+    postsPerPage: 10,
     searchValue: ''
   };
 
